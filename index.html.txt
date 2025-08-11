@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricista 24h en Mallorca - Antonio Díaz</title>
+    <meta name="description" content="Electricista profesional en Mallorca - Antonio Díaz. Servicio 24 horas, instalaciones, reparaciones y mantenimiento eléctrico. Llame ahora: +34 625 29 03 19.">
+    <meta name="keywords" content="electricista Mallorca, electricista 24h, reparaciones eléctricas Mallorca, instalación eléctrica Mallorca, Antonio Díaz electricista, servicios eléctricos Mallorca">
+    <meta name="author" content="Antonio Díaz">
+    <link rel="canonical" href="https://tudominio.com/">
+    
+    <!-- Schema.org Local Business JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Electrician",
+      "name": "Electricista en Mallorca - Antonio Díaz",
+      "image": "https://tudominio.com/icono-rayos.png",
+      "telephone": ["+34 625 29 03 19", "+34 605 29 99 03"],
+      "email": "electroservicios24h@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mallorca",
+        "addressCountry": "ES"
+      },
+      "url": "https://tudominio.com/",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "description": "Electricista profesional en Mallorca. Servicio de urgencia 24h, instalaciones y reparaciones."
+    }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #001f3f; /* Dark Blue */
+            color: #ffa500; /* Orange */
+            text-align: center;
+        }
+        header {
+            background: #001437;
+            padding: 20px;
+            border-bottom: 2px solid #ffa500;
+        }
+        header svg {
+            width: 60px;
+            height: 60px;
+            fill: #ffa500;
+            margin-bottom: 10px;
+        }
+        nav {
+            margin: 15px;
+        }
+        button {
+            margin: 5px;
+            padding: 8px 15px;
+            border: 2px solid #ffa500;
+            background: transparent;
+            color: #ffa500;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #ffa500;
+            color: #001f3f;
+        }
+        .contact {
+            background: #002855;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+            border: 1px solid #ffa500;
+        }
+        a {
+            color: #ffa500;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Lightning Bolt Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" role="img" aria-label="Icono rayo - Electricista">
+        <path d="M296 160H180.6l35.6-136.6c4.5-17.1-13.6-30.6-28.6-20.6l-192 128c-13.2 8.8-7.5 28.6 8.6 28.6H140L104.4 316.6c-4.5 17.1 13.6 30.6 28.6 20.6l192-128c13.2-8.8 7.5-28.6-8.6-28.6z"/>
+    </svg>
+    <h1 id="titulo"></h1>
+    <p id="subtitulo"></p>
+</header>
+
+<nav>
+    <button onclick="cambiarIdioma('es')">Español</button>
+    <button onclick="cambiarIdioma('en')">English</button>
+    <button onclick="cambiarIdioma('fr')">Français</button>
+    <button onclick="cambiarIdioma('de')">Deutsch</button>
+</nav>
+
+<section class="contact">
+    <h2 id="contactoTitulo"></h2>
+    <p>📞 <a href="tel:+34625290319">+34 625 29 03 19</a></p>
+    <p>📞 <a href="tel:+34605299903">+34 605 29 99 03</a></p>
+    <p>📧 <a href="mailto:electroservicios24h@gmail.com">electroservicios24h@gmail.com</a></p>
+    <p>📱 Instagram: <a href="https://instagram.com/electricista_mallorca" target="_blank">@electricista_mallorca</a></p>
+</section>
+
+<script>
+    const textos = {
+        es: {
+            titulo: "Electricista en Mallorca - Antonio Díaz",
+            subtitulo: "Servicio de urgencias 24 horas, da la luz todos los días",
+            contactoTitulo: "Contacto"
+        },
+        en: {
+            titulo: "Electrician in Mallorca - Antonio Díaz",
+            subtitulo: "24-hour emergency service, bringing light every day",
+            contactoTitulo: "Contact"
+        },
+        fr: {
+            titulo: "Électricien à Majorque - Antonio Díaz",
+            subtitulo: "Service d'urgence 24h, donne la lumière chaque jour",
+            contactoTitulo: "Contact"
+        },
+        de: {
+            titulo: "Elektriker auf Mallorca - Antonio Díaz",
+            subtitulo: "24-Stunden-Notdienst, bringt jeden Tag Licht",
+            contactoTitulo: "Kontakt"
+        }
+    };
+
+    function cambiarIdioma(idioma) {
+        document.getElementById("titulo").innerText = textos[idioma].titulo;
+        document.getElementById("subtitulo").innerText = textos[idioma].subtitulo;
+        document.getElementById("contactoTitulo").innerText = textos[idioma].contactoTitulo;
+    }
+
+    cambiarIdioma('es');
+</script>
+
+</body>
+</html>
+
